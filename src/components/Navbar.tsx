@@ -15,23 +15,38 @@ export default function Navbar() {
           <a href="#" className="font-bold text-[#0025DB]">
             Home
           </a>
-          <a href="#" className="text-gray-700 hover:text-blue-[#0025DB] font-bold">
+          <a
+            href="#"
+            className="text-gray-700 hover:text-blue-[#0025DB] font-bold"
+          >
             About
           </a>
-          <a href="#" className="text-gray-700 hover:text-blue-[#0025DB] font-bold">
+          <a
+            href="#"
+            className="text-gray-700 hover:text-blue-[#0025DB] font-bold"
+          >
             Services
           </a>
-          <a href="#" className="text-gray-700 hover:text-blue-[#0025DB] font-bold">
+          <a
+            href="#"
+            className="text-gray-700 hover:text-blue-[#0025DB] font-bold"
+          >
             Project
           </a>
-          <a href="#" className="text-gray-700 hover:text-blue-[#0025DB] font-bold">
+          <a
+            href="#"
+            className="text-gray-700 hover:text-blue-[#0025DB] font-bold"
+          >
             Blog
           </a>
-          <a href="#" className="text-gray-700 hover:text-blue-[#0025DB] font-bold">
+          <a
+            href="#"
+            className="text-gray-700 hover:text-blue-[#0025DB] font-bold"
+          >
             Contact
           </a>
           <button className="bg-gradient-to-r from-yellow-400 to-orange-400 text-white px-10 py-3.5 rounded-full font-medium hover:shadow-lg transition-shadow shadow-[0_10px_30px_rgba(251,191,36,0.4)]">
-            Let's Talk
+            Let&apos;s Talk
           </button>
         </div>
 
@@ -54,4 +69,3 @@ export default function Navbar() {
     </nav>
   );
 }
-

@@ -5,7 +5,10 @@ export default function NewsletterSection() {
         <div className="hidden md:block absolute left-32 top-20 opacity-30">
           <div className="grid grid-cols-6 gap-2">
             {[...Array(24)].map((_, i) => (
-              <div key={i} className="w-1.5 h-1.5 bg-blue-400 rounded-full"></div>
+              <div
+                key={i}
+                className="w-1.5 h-1.5 bg-blue-400 rounded-full"
+              ></div>
             ))}
           </div>
         </div>
@@ -37,7 +40,10 @@ export default function NewsletterSection() {
         <div className="hidden md:block absolute right-20 bottom-20 opacity-30">
           <div className="grid grid-cols-6 gap-2">
             {[...Array(24)].map((_, i) => (
-              <div key={i} className="w-1.5 h-1.5 bg-blue-400 rounded-full"></div>
+              <div
+                key={i}
+                className="w-1.5 h-1.5 bg-blue-400 rounded-full"
+              ></div>
             ))}
           </div>
         </div>
@@ -45,4 +51,3 @@ export default function NewsletterSection() {
     </section>
   );
 }
-

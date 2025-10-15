@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function MarketingSection() {
   return (
@@ -16,7 +16,9 @@ export default function MarketingSection() {
           </div>
 
           <div className="space-y-4 md:space-y-8">
-            <p className="text-[#585FA3] font-bold text-base md:text-lg">Marketing</p>
+            <p className="text-[#585FA3] font-bold text-base md:text-lg">
+              Marketing
+            </p>
 
             <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
               Take Your Business Marketing To The Next
@@ -24,9 +26,10 @@ export default function MarketingSection() {
 
             <p className="text-gray-600 text-base md:text-xl leading-relaxed">
               But I must explain to you how all this mistaken idea of denouncing
-              pleasure and account of the system, and expound the actual teachings of the
-              great explorer of the truth, the master-builder of human happiness.
-              No one rejects, dislikes, or avoids pleasure itself.
+              pleasure and account of the system, and expound the actual
+              teachings of the great explorer of the truth, the master-builder
+              of human happiness. No one rejects, dislikes, or avoids pleasure
+              itself.
             </p>
 
             <div className="pt-2">
@@ -40,4 +43,3 @@ export default function MarketingSection() {
     </section>
   );
 }
-

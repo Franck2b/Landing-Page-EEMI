@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function HeroSection() {
   return (
@@ -7,7 +7,9 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 items-center">
           <div className="space-y-4 md:space-y-6">
             <div className="inline-block">
-              <span className="text-[#585FA3] font-bold text-sm md:text-md">Welcome</span>
+              <span className="text-[#585FA3] font-bold text-sm md:text-md">
+                Welcome
+              </span>
             </div>
 
             <h1 className="text-3xl md:text-5xl lg:text-8xl font-bold text-gray-900 leading-tight">
@@ -16,7 +18,8 @@ export default function HeroSection() {
 
             <p className="text-gray-600 text-base md:text-lg leading-relaxed max-w-2xl">
               But I must explain to you how all this mistaken idea of denouncing
-              pleasure and praising pain was born and I will give you a complete.
+              pleasure and praising pain was born and I will give you a
+              complete.
             </p>
 
             <div className="pt-2">
@@ -40,4 +43,3 @@ export default function HeroSection() {
     </section>
   );
 }
-

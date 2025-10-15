@@ -1,27 +1,28 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function NewsSection() {
   const articles = [
     {
-      date: 'June 14, 2020',
-      author: 'Ashton Adams',
-      tag: 'News',
-      title: 'Punto Pago Allows Quick And Secure Payments For Services In Panama',
-      image: '/p6.webp',
+      date: "June 14, 2020",
+      author: "Ashton Adams",
+      tag: "News",
+      title:
+        "Punto Pago Allows Quick And Secure Payments For Services In Panama",
+      image: "/p6.webp",
     },
     {
-      date: 'June 14, 2020',
-      author: 'Cathryn Ritchie',
-      tag: 'News',
-      title: 'Teamwork Of Team Members Together In The Best Way',
-      image: '/p6.webp',
+      date: "June 14, 2020",
+      author: "Cathryn Ritchie",
+      tag: "News",
+      title: "Teamwork Of Team Members Together In The Best Way",
+      image: "/p6.webp",
     },
     {
-      date: 'June 14, 2020',
-      author: 'Gayle Owens',
-      tag: 'News',
-      title: 'The User Can Also Replenish A Balance Make Remittances',
-      image: '/p6.webp',
+      date: "June 14, 2020",
+      author: "Gayle Owens",
+      tag: "News",
+      title: "The User Can Also Replenish A Balance Make Remittances",
+      image: "/p6.webp",
     },
   ];
 
@@ -62,7 +63,8 @@ export default function NewsSection() {
                   <div>
                     <div className="flex flex-wrap items-center gap-2 md:gap-4 mb-3 md:mb-4">
                       <span className="text-gray-500 text-xs md:text-sm">
-                        Posted <span className="font-medium">{article.date}</span>
+                        Posted{" "}
+                        <span className="font-medium">{article.date}</span>
                       </span>
                       <span className="text-gray-500 text-xs md:text-sm">
                         By <span className="font-medium">{article.author}</span>
@@ -103,4 +105,3 @@ export default function NewsSection() {
     </section>
   );
 }
-

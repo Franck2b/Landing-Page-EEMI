@@ -27,4 +27,3 @@ Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur.
 - `npm run lint:fix` - Corrige automatiquement les erreurs de linting
 - `npm run format` - Formate le code avec Prettier
 - `npm run format:check` - Vérifie le formatage du code
-

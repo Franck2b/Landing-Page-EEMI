@@ -1,24 +1,22 @@
-import Image from 'next/image';
-
 export default function TestimonialSection() {
   const testimonials = [
     {
-      name: 'Charles Patterson',
-      role: 'One Year With Us',
-      avatar: '/avatar1.jpg',
-      text: 'consectetur adipiscing elit, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+      name: "Charles Patterson",
+      role: "One Year With Us",
+      avatar: "/avatar1.jpg",
+      text: "consectetur adipiscing elit, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
     },
     {
-      name: 'Charles Patterson',
-      role: 'One Year With Us',
-      avatar: '/avatar2.jpg',
-      text: 'consectetur adipiscing elit, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+      name: "Charles Patterson",
+      role: "One Year With Us",
+      avatar: "/avatar2.jpg",
+      text: "consectetur adipiscing elit, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
     },
     {
-      name: 'Charles Patterson',
-      role: 'One Year With Us',
-      avatar: '/avatar3.jpg',
-      text: 'consectetur adipiscing elit, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+      name: "Charles Patterson",
+      role: "One Year With Us",
+      avatar: "/avatar3.jpg",
+      text: "consectetur adipiscing elit, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
     },
   ];
 
@@ -26,7 +24,9 @@ export default function TestimonialSection() {
     <section className="w-full px-4 py-16 md:px-6 md:py-28 lg:px-12">
       <div className="w-full">
         <div className="text-center mb-8 md:mb-12">
-          <p className="text-[#585FA3] font-bold text-lg md:text-xl mb-4 md:mb-8">Testimonial</p>
+          <p className="text-[#585FA3] font-bold text-lg md:text-xl mb-4 md:mb-8">
+            Testimonial
+          </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
             What The People Thinks About Us
           </h2>
@@ -47,7 +47,9 @@ export default function TestimonialSection() {
                     <h3 className="text-base md:text-lg font-bold text-gray-900">
                       {testimonial.name}
                     </h3>
-                    <p className="text-xs md:text-sm text-gray-400">{testimonial.role}</p>
+                    <p className="text-xs md:text-sm text-gray-400">
+                      {testimonial.role}
+                    </p>
                   </div>
                 </div>
                 <div className="text-[#0025DB] flex-shrink-0">
@@ -61,7 +63,9 @@ export default function TestimonialSection() {
                 </div>
               </div>
 
-              <p className="text-sm md:text-base text-gray-900 leading-relaxed text-left p-2 md:p-4">{testimonial.text}</p>
+              <p className="text-sm md:text-base text-gray-900 leading-relaxed text-left p-2 md:p-4">
+                {testimonial.text}
+              </p>
             </div>
           ))}
         </div>
@@ -69,4 +73,3 @@ export default function TestimonialSection() {
     </section>
   );
 }
-
