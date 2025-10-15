@@ -23,42 +23,36 @@ export default function TestimonialSection() {
   ];
 
   return (
-    <section className="w-full px-6 py-28 lg:px-12">
+    <section className="w-full px-4 py-16 md:px-6 md:py-28 lg:px-12">
       <div className="w-full">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <p className="text-[#585FA3] font-bold text-xl mb-8">Testimonial</p>
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
+        <div className="text-center mb-8 md:mb-12">
+          <p className="text-[#585FA3] font-bold text-lg md:text-xl mb-4 md:mb-8">Testimonial</p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
             What The People Thinks About Us
           </h2>
         </div>
 
-        {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white p-8 shadow-[0_4px_15px_rgba(0,0,0,0.1)] rounded-2xl min-h-[260px] flex flex-col justify-center"
+              className="bg-white p-6 md:p-8 shadow-[0_4px_15px_rgba(0,0,0,0.1)] rounded-2xl min-h-[220px] md:min-h-[260px] flex flex-col justify-center"
             >
-              {/* Header with avatar and quote icon */}
-              <div className="flex items-center justify-between p-4">
-                <div className="flex items-center gap-4">
-                  {/* Avatar */}
-                  <div className="w-14 h-14 rounded-full bg-gray-200 overflow-hidden flex-shrink-0">
+              <div className="flex items-center justify-between p-2 md:p-4">
+                <div className="flex items-center gap-3 md:gap-4">
+                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-gray-200 overflow-hidden flex-shrink-0">
                     <div className="w-full h-full bg-gradient-to-br from-blue-400 to-purple-400"></div>
                   </div>
-                  {/* Name and Role */}
                   <div>
-                    <h3 className="text-lg font-bold text-gray-900">
+                    <h3 className="text-base md:text-lg font-bold text-gray-900">
                       {testimonial.name}
                     </h3>
-                    <p className="text-sm text-gray-400">{testimonial.role}</p>
+                    <p className="text-xs md:text-sm text-gray-400">{testimonial.role}</p>
                   </div>
                 </div>
-                {/* Quote Icon */}
                 <div className="text-[#0025DB] flex-shrink-0">
                   <svg
-                    className="w-10 h-10"
+                    className="w-8 h-8 md:w-10 md:h-10"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -67,8 +61,7 @@ export default function TestimonialSection() {
                 </div>
               </div>
 
-              {/* Description */}
-              <p className="text-gray-900 leading-relaxed text-left p-4">{testimonial.text}</p>
+              <p className="text-sm md:text-base text-gray-900 leading-relaxed text-left p-2 md:p-4">{testimonial.text}</p>
             </div>
           ))}
         </div>

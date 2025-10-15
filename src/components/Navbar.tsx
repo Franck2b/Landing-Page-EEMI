@@ -1,19 +1,17 @@
 export default function Navbar() {
   return (
-    <nav className="w-full px-6 py-8 lg:px-12">
+    <nav className="w-full px-4 py-6 md:px-6 md:py-8 lg:px-12">
       <div className="w-full flex items-center justify-between">
-        {/* Logo */}
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-blue-600 rounded-md flex items-center justify-center">
-            <span className="text-white font-bold text-lg">M</span>
+          <div className="w-7 h-7 md:w-8 md:h-8 bg-blue-600 rounded-md flex items-center justify-center">
+            <span className="text-white font-bold text-base md:text-lg">M</span>
           </div>
-          <span className="text-xl font-semibold text-gray-900">
+          <span className="text-lg md:text-xl font-semibold text-gray-900">
             Digital <span className="font-normal">Marketing</span>
           </span>
         </div>
 
-        {/* Navigation links + CTA Button - All on the right */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8">
           <a href="#" className="font-bold text-[#0025DB]">
             Home
           </a>
@@ -37,8 +35,7 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile menu button */}
-        <button className="md:hidden text-gray-700">
+        <button className="lg:hidden text-gray-700">
           <svg
             className="w-6 h-6"
             fill="none"

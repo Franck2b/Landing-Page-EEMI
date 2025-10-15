@@ -2,27 +2,25 @@ import Image from 'next/image';
 
 export default function PortfolioSection() {
   return (
-    <section className="w-full px-6 py-28 lg:px-12">
+    <section className="w-full px-4 py-16 md:px-6 md:py-28 lg:px-12">
       <div className="w-full">
-        {/* Header */}
-        <div className="flex items-start justify-between mb-12">
+        <div className="flex flex-col md:flex-row items-start justify-between mb-8 md:mb-12 gap-4">
           <div>
-            <p className="text-[#585FA3] font-bold text-lg mb-8">
+            <p className="text-[#585FA3] font-bold text-base md:text-lg mb-4 md:mb-8">
               Our Portfolio
             </p>
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
               Latest Project
             </h2>
           </div>
-          <button className="bg-[#0025DB] text-white px-12 py-3.5 rounded-full font-medium hover:bg-blue-700 transition-colors shadow-[0_10px_30px_rgba(0,37,219,0.4)]">
+          <button className="bg-[#0025DB] text-white px-8 py-3 md:px-12 md:py-3.5 rounded-full font-medium hover:bg-blue-700 transition-colors shadow-[0_10px_30px_rgba(0,37,219,0.4)] text-sm md:text-base">
             View All
           </button>
         </div>
 
-        {/* Content Grid */}
         <div className="relative">
-          <div className="grid grid-cols-6 gap-6">
-            <div className="col-span-3 relative rounded-2xl overflow-hidden shadow-lg">
+          <div className="grid grid-cols-1 lg:grid-cols-6 gap-4 md:gap-6">
+            <div className="lg:col-span-3 relative rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/p41.avif"
                 alt="Project 1"
@@ -32,9 +30,9 @@ export default function PortfolioSection() {
                 unoptimized
               />
             </div>
-            <div className="col-span-3"></div>
+            <div className="hidden lg:block lg:col-span-3"></div>
 
-            <div className="col-span-3 relative rounded-2xl overflow-hidden shadow-lg">
+            <div className="lg:col-span-3 relative rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/p42.webp"
                 alt="Project 2"
@@ -44,11 +42,10 @@ export default function PortfolioSection() {
                 unoptimized
               />
             </div>
-            <div className="col-span-3"></div>
+            <div className="hidden lg:block lg:col-span-3"></div>
           </div>
 
-          {/* Right side - Action buttons with text (absolute positioned) */}
-          <div className="absolute right-0 top-2/4 -translate-y-1/2 flex flex-col gap-1 z-40">
+          <div className="hidden lg:flex absolute right-0 top-2/4 -translate-y-1/2 flex-col gap-1 z-40">
             <button className="bg-[#8A898F] hover:bg-[#6f6e73] text-white px-4 py-3 flex items-center gap-3 transition-colors min-w-[160px] cursor-pointer">
               <svg
                 className="w-5 h-5"
